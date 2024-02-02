@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .container input {
+      height: 40px;
+      width: 220px;
+      font-size: 30px;
+    }
+    button {
+      margin-top: 30px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <form action="/products" method="post">
+        <input type="text" placeholder="productName" name="productName" /><br />
+        <input type="number" placeholder="price" name="price" /><br />
+        <input type="text" placeholder="description" name="description" /><br />
+        <button>UPDATE</button><br />
+      </form>
+    </div>
+  </body>
+</html>
